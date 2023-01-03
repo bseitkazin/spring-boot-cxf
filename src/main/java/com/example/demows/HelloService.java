@@ -20,5 +20,5 @@ public interface HelloService {
 			localName = "sayHelloResponse", 
 			targetNamespace = "http://service.ws.sample/",
 			className = "sample.ws.service.SayHelloResponse")
-	String sayHello(@WebParam(name = "name", targetNamespace = "") String name);
+	String sayHello(@WebParam(name = "name", targetNamespace = "http://service.ws.sample/") String name);
 }
